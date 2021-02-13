@@ -28,7 +28,7 @@ void game(struct game *game_info, struct gui *game_menu)
             set_value(game_info);
         render(game_info, game_menu);
         sfRenderWindow_drawText(game_info->window, game_info->Score, NULL);
-        sfText_setString(game_info->score_nbr, convert_score(game_info->score));
+        sfText_setString(game_info->score_nbr, conv_score(game_info->score));
         sfRenderWindow_drawText(game_info->window, game_info->score_nbr, NULL);
         sfRenderWindow_display(game_info->window);
     } else {
@@ -53,7 +53,7 @@ void display_end(struct game *game_info, struct gui *game_menu)
     sfText_setFont(game_info->score_nbr, game_info->rubik);
     sfText_setColor(game_info->score_nbr, sfWhite);
     sfText_setCharacterSize(game_info->score_nbr, 68);
-    sfText_setString(game_menu->score_best, convert_score(game_menu->best_score));
+    sfText_setString(game_menu->score_best, conv_score(game_menu->best_score));
     sfRenderWindow_drawText(game_info->window, game_menu->score_best, NULL);
     sfRenderWindow_drawText(game_info->window, game_info->score_nbr, NULL);
 }

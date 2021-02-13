@@ -144,7 +144,7 @@ struct gui
     sfSprite *exit;
 };
 
-char *convert_score(int nbr);
+char *conv_score(int nbr);
 void print_help(void);
 void animation(struct game *game_info);
 void event(struct game *game_info, struct gui *game_menu);

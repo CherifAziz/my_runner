@@ -32,7 +32,7 @@ void text(struct game *game_info, struct gui *game_menu)
     sfText_setCharacterSize(game_info->Score, 60);
     game_info->score_nbr = sfText_create();
     sfText_setFont(game_info->score_nbr, game_info->one_piece);
-    sfText_setString(game_info->score_nbr, convert_score(game_info->score));
+    sfText_setString(game_info->score_nbr, conv_score(game_info->score));
     sfText_setColor(game_info->score_nbr, sfRed);
     sfText_setCharacterSize(game_info->score_nbr, 60);
     sfText_setPosition(game_info->score_nbr, game_info->score_vector);

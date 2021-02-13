@@ -21,7 +21,7 @@
 #include "../lib/my/my.h"
 #include "../include/my_hunter.h"
 
-char *convert_score(int nbr)
+char *conv_score(int nbr)
 {
     int len = number_digits(nbr);
     char *result = malloc(sizeof(char) * len);
@@ -75,7 +75,7 @@ int main(int ac, char **av)
             print_help();
         else {
             my_printf("%s is not a valid argument\n", av[1]);
-            exit(84);
+            return (84);
         }
     }
     else if (ac > 2)
